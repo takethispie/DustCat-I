@@ -1,0 +1,48 @@
+OP: 6bit
+RS: 5bit
+RT: 5bit
+RD: 5bit
+SHAMT: 5bit shift amount
+Function: 6bit
+
+Memory access (read):
+101xxx 
+
+memory store:
+1011xx
+	direct adressing -> 101100
+
+JUMP
+001xxx
+   001 A > B
+   010 A = B
+   011 A < B
+   100 A >= B
+   101 A != B
+   110 A <= B
+   111 unconditionnal
+
+branch
+010xxx
+   001 A > B
+   010 A = B
+   011 A < B
+   100 A >= B
+   101 A != B
+   110 A <= B
+   111 unconditionnal
+
+COMP
+011010
+
+
+name 	opcode
+LI 100001
+
+//may be used later
+LWI 100010 
+
+shifts
+LLS
+LRS
+ARS

@@ -1,0 +1,66 @@
+
+*--------instruction from MIPS32-------------*
+NOP
+
+ADDIU add immediate
+ADDU
+SUBU
+DIV
+DIVU
+MUL
+
+LI  Immediate load  -> opcode will be 100001
+LUI  cont<<16 (load upper)
+MOVE Rd = Rs
+
+SLL shift left logical
+SRL shift right logical
+SRA shift right arithmetic
+
+AND
+ANDI
+OR
+ORI
+XOR
+XORI
+
+SGT set greater than
+SEQ
+SNEQ
+SLT
+
+SGTI set greater than immediate 
+SEQI
+SLTI
+
+LW load word from memory Rd = memory(Rs + offset16)
+SW
+
+*--------------------------------------------*
+COMP //set comparison status register (lower than, equal, not equal, greater than)
+
+BRA
+BGT
+BGTEQ
+BEQ
+BNEQ
+BLT
+BLTEQ
+
+JUMP
+JGT
+JGTEQ
+JEQ
+JNEQ
+JLT
+JLTEQ
+
+POP
+PUSH
+SPDO
+SPUP
+SSET
+
+ENINT
+DISINT
+SETINT
